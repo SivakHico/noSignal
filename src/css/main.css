@@ -226,7 +226,7 @@ body {
   position: relative;
 }
 .on #content {
-  animation: screen-turn-on 0.4s linear 0.5s 1 forwards;
+  animation: screen-turn-on 1s linear 0.5s 1 forwards;
 }
 
 #about {
@@ -267,6 +267,9 @@ body {
 }
 #channel .time {
   margin-right: 15px;
+}
+#channel .wish {
+  font-size: 2vw;
 }
 #text {
   color: #ededed;

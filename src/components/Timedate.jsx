@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react'
-import ScaleLoader from 'react-spinners/ScaleLoader'
 
 export default function Timedate() {
     const locale = 'de-DE';
     const [today, setDate] = useState(new Date());
-    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         setInterval(() => {
@@ -18,16 +16,6 @@ export default function Timedate() {
 
     return (
         <>
-            <ScaleLoader
-                color="#36d7b7"
-                cssOverride={{}}
-                height={100}
-                loading={loading}
-                margin={5}
-                speedMultiplier={2}
-                width={8}
-                radius={10}
-            />
             <span className='time'>{time}</span>
             <span className='wish'>{wish}</span>
         </>
