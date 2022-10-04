@@ -38,9 +38,28 @@ export default function Typewriter() {
                                 </div>
                             </div>
                         </div>
-                        <div id="about" onclick="power();"><span>about</span></div>
-                        <div id="power" onclick="power();">project</div>
-                        <div id="power" onclick="power();">contact</div>
+                        <div id='controls'>
+                            <div className='power tooltip' id="home">
+                                <i className='fa fa-home'></i>
+                                <span className="tooltiptext">Home</span>
+                            </div>
+                            <div className='power tooltip' id="about">
+                                <i class="fa fa-child"></i>
+                                <span className="tooltiptext">Me</span>
+                            </div>
+                            <div className='power tooltip' id="portfolio">
+                                <i class="fa fa-outdent"></i>
+                                <span className="tooltiptext">Works</span>
+                            </div>
+                            <div className='power tooltip' id='review'>
+                                <i class="fa fa-podcast"></i>
+                                <span className="tooltiptext">Review</span>
+                            </div>
+                            <div className='power tooltip' id='contact'>
+                                <i class="fa fa-coffee"></i>
+                                <span className="tooltiptext">Contact</span>
+                            </div>
+                        </div>
                     </div>
             }
         </>

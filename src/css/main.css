@@ -228,32 +228,42 @@ body {
 .on #content {
   animation: screen-turn-on 1s linear 0.5s 1 forwards;
 }
-
-#about {
-  bottom: 12px;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: 120px;
-  background-color: #282828;
-  cursor: pointer;
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
   text-align: center;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-
-#power {
-  bottom: 12px;
-  width: 35px;
-  height: 35px;
+  border-radius: 6px;
+  padding: 5px 0;
   position: absolute;
-  right: 45px;
-  background-color: #282828;
-  cursor: pointer;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
 }
-.on #power {
-  background-color: #0035ff;
-  box-shadow: 0px 0px 20px 2px #0035ff;
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+#controls {
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  padding-left: 30px;
+}
+.on .power:hover {
+  color: #0035ff;
+}
+.on .power {
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 5px;
+  margin-right: 20px;
 }
 #channel {
   position: absolute;
