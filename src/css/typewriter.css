@@ -9,26 +9,60 @@
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
+.white-bg {
+  background-color: white !important;
+}
+
+#me {
+  height: 653px;
+  display: block;
+}
+
 #loader {
   text-align: center;
   margin-top: 25%;
   color: #fff;
 }
 
+#controls {
+  bottom: -9px;
+  display: flex;
+  position: absolute;
+  padding-left: 15px;
+}
+
+#controls .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  color: white;
+  font-size: 20px;
+  line-height: 0;
+  text-transform: capitalize;
+}
+
+#controls .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #1976d2;
+}
+
+#screen .css-19kzrtu {
+  padding: 0px;
+}
+
 @keyframes typing {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
 }
 
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: orange;
   }

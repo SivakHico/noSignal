@@ -4,15 +4,23 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "start": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@emailjs/browser": "^3.9.0",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/material": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "dotenv": "^16.0.3",
+    "react": "latest",
+    "react-dom": "latest",
     "react-spinners": "^0.13.4",
-    "time-input": "^1.6.1"
+    "time-input": "^1.6.1",
+    "typescript": "latest"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

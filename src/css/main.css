@@ -250,12 +250,6 @@ body {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-#controls {
-  bottom: 0;
-  display: flex;
-  position: absolute;
-  padding-left: 30px;
-}
 .on .power:hover {
   color: #0035ff;
 }

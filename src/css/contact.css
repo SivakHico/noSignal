@@ -1,0 +1,27 @@
+#send-email {
+    display: grid;
+}
+
+#send-email input {
+    width: 350px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#send-email textarea {
+    margin-bottom: 20px;
+    resize: none;
+}
+
+#send-email input[type="submit"] {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 358px;
+}
+
+#send-email input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
